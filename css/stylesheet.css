@@ -1,5 +1,96 @@
 .container{
-display: grid;
-height:150vh
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 10% 10% 60% 10%;
+    grid-template-areas: 
+    'hd'
+    'nv'
+    'mn'
+    'ft';
+    margin: auto;
+    gap: 8px;
+    background-color: purple;
+    padding: 8px;
+ 
+   
+    
 
 }
+
+
+header{
+    grid-area: hd;
+    background: rgb(0, 153, 255);
+    
+    
+}
+
+nav{
+    grid-area: nv;
+    background: rgb(236, 139, 139);
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    height: 10vh;
+    font-size: 40px;
+    
+    
+}
+nav a {
+    text-decoration: none;
+
+}
+
+footer{
+    grid-area: ft;
+    background: black;
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main {
+    grid-area: mn;
+    background-color: blueviolet;
+    
+}
+
+nav a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav a:hover { 
+    background-color: antiquewhite;
+    color: aqua;
+
+}
+  
+  
+body{
+    margin: 0;
+    background-color: purple;
+  }
+
+
+
+
+#titel{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+   
+  
+}
+
+
+
+  
+  
