@@ -8,32 +8,32 @@
     'mn mn mn mn'
     'ft ft ft ft';
     margin: auto;
-    gap: 3px;
     background-color: black;
 }
 
 header{
     grid-area: hd;
-    background: #2ecc71;
+    background: #ffffff;
 }
 
 nav{
     grid-area: nv;
     display: flex;
     justify-content: space-around;
-    background-color: #2ecc71;
+    background-color: #111412;
+    color: #ffffff;
     height: 10vh;
     font-size: 40px;   
 }
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 footer{
     grid-area: ft;
-    background: #2ecc71;
-    color: black;
+    background: #111412;
+    color: #2ecc40;
     font-size: 15px;
     align-items: center;
     display: flex;
@@ -42,7 +42,7 @@ footer{
 
 main {
     grid-area: mn;
-    background-color: black;
+    background-color: rgb(18, 21, 18);
     height: 500px;
     
 }
@@ -71,7 +71,7 @@ body{
     text-align: center;
     font-size: 50px;
     margin: 0;
-    color: black;
+    color:#2ecc40;
 }
 
 #kodbild{
@@ -82,4 +82,41 @@ margin-right: 130px;
 margin-top: 20px;
 margin-bottom: 20px;
 }
+
+.container2{
+
+    grid-template-areas: 'hd hd hd hd '
+    'nv nv nv nv'
+    'as sec1 sec1 sec1'
+    'as sec2 sec2 sec2'
+    'ft ft ft ft ';
+
+    grid-template-rows: auto 1fr 3fr 3fr auto;
+    display: grid;
+    height: 120vh;
+   
+    background-color: black;
+}
+
+
+#sec1{
+    grid-area: sec1;
+  background-color:#ffffff;
+  color: #000000;
+  gap: none;
+
+}
+
+#sec2{
+    grid-area: sec2;
+    background-color:#ffffff ;
+    color: #000000;
+
+}
+
+aside{
+    grid-area: as;
+    background-color:#b6b9b6;
+}
+
 
