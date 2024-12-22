@@ -92,11 +92,11 @@ margin-bottom: 20px;
 
 .container2{
 
-    grid-template-areas: 'hd hd hd hd '
-    'nv nv nv nv'
-    'as sec1 sec1 sec1'
-    'as sec2 sec2 sec2'
-    'ft ft ft ft ';
+    grid-template-areas: 'hd hd hd hd hd hd '
+    'nv nv nv nv nv nv'
+    'as sec1 sec1 sec1 sec1 sec1'
+    'as sec2 sec2 sec2 sec2 sec2'
+    'ft ft ft ft ft ft ';
 
     grid-template-rows: auto 1fr 3fr 3fr auto;
     display: grid;
@@ -107,23 +107,39 @@ margin-bottom: 20px;
 
 
 #sec1{
-    grid-area: sec1;
+  grid-area: sec1;
   background-color:#ffffff;
   color: #000000;
   gap: none;
-
+  padding: 10px;
+  border: 3px solid;
+  border-radius: 10px;
 }
 
 #sec2{
     grid-area: sec2;
     background-color:#ffffff ;
     color: #000000;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 10px;
+    
 
 }
 
 aside{
     grid-area: as;
     background-color:#b6b9b6;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+aside ul li{
+    padding: 25px;
+    list-style: none;
+    font-size: larger;
+
 }
 
 .card{
@@ -162,4 +178,10 @@ aside{
 .card ul li {
 font-size: 16px;
 margin: 10px;
+}
+
+.lang:hover{
+    color: #000000;
+    border: 3px solid;
+    border-radius: 10px;
 }
